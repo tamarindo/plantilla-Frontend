@@ -1,0 +1,27 @@
+{
+  "name": "PlantillaAngularStylus",
+  "version": "1.0.0",
+  "description": "Platilla para la creacion de web con angular y Stylus",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.2.0",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.9.1",
+    "nib": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Bernal",
+  "license": "APACHE"
+}

@@ -1,0 +1,119 @@
+.show
+  display: block;
+  
+.hide
+  display: none;
+
+/*
+ * ------------------------------
+ * Mixins'n'Vars
+ * ------------------------------
+ */
+
+.vertical-align
+  width: 100%
+  display: table
+  > div
+    display: table-cell
+    vertical-align: middle
+
+.block-center
+  margin: 0 auto
+
+.flat
+  margin: 0
+
+
+
+input[type="submit"],button
+  border: none
+
+button.flat
+  outline: none
+  background-color: transparent
+  border: none
+  font-weight: 400
+
+button[disabled]
+  opacity: 0.8
+  cursor: not-allowed
+
+/*
+ * Lists, menus
+ */
+
+.list
+	margin: 0
+
+.inline-list
+	li
+		display: inline-block
+
+.inline
+  display: inline-block
+
+.pull-left
+  float: left
+
+.pull-right
+	float: right
+
+/*
+ * Text
+ */
+
+.left-text
+	text-align left
+
+.right-text
+	text-align right
+
+.center-text
+	text-align center
+
+.text-big
+  font-size 1.7rem
+
+.main-title
+  text-transform uppercase
+
+.title
+  &.border-bottom
+    padding-bottom 10px
+    border-bottom 1px solid light-gray
+    margin-bottom 2rem
+
+.bordered
+  padding-top 1rem
+  padding-bottom 1rem
+  border-top 1px solid light-gray
+  border-bottom 1px solid light-gray
+
+ /*
+ * UI Components
+ */
+.alert
+  background-color #FDFBCD
+  color #9B7106
+  margin 1rem auto
+  padding 1rem 1rem 1rem 1.5rem
+  position relative
+  transition opacity 250ms ease-out
+
+  &.ng-hide
+    opacity 0
+
+    // Alert types
+  &.info
+    background-color blue
+  &.error
+    background-color red
+  &.success
+    background-color green
+  &.info
+  &.error
+  &.success
+    color #fff
+    a
+      color #fff
+      text-decoration underline

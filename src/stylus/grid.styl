@@ -1,0 +1,83 @@
+fluid-grid(breakpoint)
+	display: flex
+	flex-flow: column wrap
+
+	@media (min-width: breakpoint)
+		flex-direction: row
+
+.fluid-grid
+	fluid-grid(640px)
+
+	&.static
+		flex-direction: row
+
+	&.valigned
+		align-items: center
+
+	&.expand
+		justify-content: space-between
+
+.container
+	margin: 0 auto
+	width: 93%
+	overflow: hidden;
+
+	&.medium
+		max-width: 42em
+
+.full-container
+	margin: 0 auto
+	width: 100%
+
+.clearfix
+	&:after
+	&:before
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+// Fluid columns
+.column-s
+	float: left
+	padding-left: 1rem
+	padding-right: 1rem
+	&.half
+		width: 50%
+
+// Make columns have a margin when colapse
+.column
+	margin-bottom: 1rem
+	box-sizing: border-box
+.column.left
+		float: left
+.column.right
+		float: right
+// Responsive columns Desktop
+@media (min-width: 42em)
+	.column
+		float: left
+		padding-left: 1rem
+		padding-right: 1rem
+		&.full
+			width: 100%
+		&.half
+			width: 50%
+		&.third
+			width: 33.3%
+		&.two-thirds
+			width: 66.7%
+		&.fourth
+			width: 25%
+
+	.container
+		width: 73%
+		max-width: 1240px
+
+// Responsive columns Small devices
+@media (max-width: 42em )
+	.half-xs
+		float: left
+		padding-left: 1rem
+		padding-right: 1rem
+		width: 50%
