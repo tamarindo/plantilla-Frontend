@@ -1,9 +1,12 @@
 # Plantilla Angular Stylus
 
-Plantilla "Angular,Stylus,Gulp"
+Plantilla front-end
+
+Plantilla basica para crear website con estas tecnologias
+
+Gulp , stylus , angular 1.6 , jshint
 
 ### Inicializar
 
--- npm install
-
--- gulp
+* npm install
+* gulp
